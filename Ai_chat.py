@@ -2,7 +2,6 @@ import pyaudio, time, wave, uuid, os, boto3, cv2 # openCV-python
 import cvlib, traceback
 from cvlib.object_detection import draw_bbox
 from playsound import playsound
-from mutagen.mp3 import MP3
 from pydub import AudioSegment
 from opencc import OpenCC
 from openai import OpenAI
@@ -18,7 +17,9 @@ def voice(): ## playsound
 
 
 def transcribe_and_s3(audio, words, bucket):  ## transcribe and upload to AWS
-    # 用OpenAI的API做STT的速度及精準度都比免費開源的whisper好太多，30秒音檔10秒內轉譯、上傳s3完畢，且文字正確
+
+    ## 用OpenAI的API做STT的速度及精準度都比免費開源的whisper好太多，30秒音檔10秒內轉譯、上傳s3完畢，且文字正確
+    ## see Realtime API (Audio API) https://platform.openai.com/docs/guides/speech-to-text
 
     with open(audio, "rb") as audio_file:
         transcription = client.audio.transcriptions.create(
@@ -193,7 +194,7 @@ def receive(): ## python receive audio commands from users 5 seconds a time
                     rate = RATE,
                     input = True,
                     frames_per_buffer = CHUNK)
-    print('Give an audio command to AI within this 7 seconds ......')
+    print('Talk to AI within this 7 seconds ......')
 
     frames = []
     for i in range(int(RATE/CHUNK* SECONDS)):
@@ -220,6 +221,8 @@ def receive(): ## python receive audio commands from users 5 seconds a time
         wf.close()
 
     ## request STT to ai
+    ## see Realtime API (Audio API) https://platform.openai.com/docs/guides/speech-to-text
+
     with open(cmdwv, "rb") as audio_file:
         transcription = client.audio.transcriptions.create(
             model = "gpt-4o-transcribe", 
@@ -252,6 +255,8 @@ while True:
     try:
         content = receive()
         ## AI choose a right function to response
+        ## see response API https://platform.openai.com/docs/api-reference/responses
+
         response = client.responses.create(
             model="gpt-4.1",
             input=[{"role": "user", "content": content}],
