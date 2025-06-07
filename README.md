@@ -38,7 +38,7 @@ pip install -r requirements. txt
 Installing _FFMPEG_, a multimedia framework, for you to convert a file format of video and audio.
 The way of its installation based on the type of OS in your computer.
 ### Configuration of Yolov3
-Downloading the file, ***yolov3.cfg***, I attached in this repository, and [***yolov3.weights***](https://data.pjreddie.com/files/yolov3.weights). Put those two files in this directory of relative path, ***C:/Users/User/.cvlib/object_detection/yolo/yolov3*** (Windows) or ***/root/.cvlib/object_detection/yolo/yolov3*** (Linux). This directory is automatically produced when the app runs _cvlib_.
+Downloading the file, **yolov3.cfg**, I attached in this repository, and [**yolov3.weights**](https://data.pjreddie.com/files/yolov3.weights). Put those two files in this directory of relative path, **C:/Users/User/.cvlib/object_detection/yolo/yolov3** (Windows) or **/root/.cvlib/object_detection/yolo/yolov3** (Linux). This directory is automatically produced when the app runs _cvlib_.
 _Yolov3_ is the model for detection of objects in camera, so you must set its configuration with _yolov3.cfg_ and _yolov3.weights_ in the right place. 
 ## Packages
 #### playsound
@@ -58,3 +58,5 @@ Please talk to AI your request within a short period of time when you see the be
 > Talk to AI within this 7 seconds ......
 
 AI will operate the functions I designed if you say something about making some noise, STT or detecting the number of human beings. 
+If you'd like to close the camera poping up, just hit its close button with mouse.
+If you want to terminate the application, press the key causing the error of **KeyboardInterrupt**.
