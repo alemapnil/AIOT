@@ -241,7 +241,7 @@ s3 = boto3.client("s3",
         aws_secret_access_key = os.getenv("AWS_SECRET_KEY")
     )
 
-## confirm AwS folder is None or not.
+## confirm AWS folder is None or not.
 confirm_box(os.getenv("AWS_BUCKET_NAME"))
 
 ## create AI instance
