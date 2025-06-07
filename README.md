@@ -16,7 +16,7 @@ with open(audio, "rb") as audio_file:
 print(transcription.text)
 ```
 #### Response API
-OpenAI's most advanced interface for generating model responses. Supports text and image inputs, and text outputs. Allow the model access to data using function calling. It exerts the brand-new LLM model, GPT-4.1, which was just launched in April, 2025 and outperforms GPT-4o. With this new model, OpenAI can decide which function should be called due to the content of input.
+OpenAI's most advanced interface for generating model responses. Supports text and image inputs, and text outputs. Allow the model access to data using function calling. It exerts the brand-new LLM model, GPT-4.1, which was just launched in April, 2025 and outperforms GPT-4o. With this new model, OpenAI can decide which function should be called based on the content of input.
 ```
 client = OpenAI(api_key = os.getenv("OPENAI_API_KEY"))
 response = client.responses.create(
