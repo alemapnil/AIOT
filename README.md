@@ -41,6 +41,7 @@ The way of its installation based on the type of OS in your computer.
 Downloading the file, **yolov3.cfg**, I attached in this repository, and [**yolov3.weights**](https://data.pjreddie.com/files/yolov3.weights). Put those two files in the directory of below absolute path.
 > **C:/Users/User/.cvlib/object_detection/yolo/yolov3** (Windows)
 > **/root/.cvlib/object_detection/yolo/yolov3** (Linux)
+
 This directory is automatically produced when the app runs _cvlib_.
 _Yolov3_ is the model for detection of objects in camera, so you must set its configuration with _yolov3.cfg_ and _yolov3.weights_ in the right place. 
 ## Packages
