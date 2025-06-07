@@ -57,4 +57,4 @@ Detecting the number of each kind of objects in the video with _cvlib_.
 Please talk to AI your request within a short period of time when you see the below sentence.
 > Talk to AI within this 7 seconds ......
 
-AI will operate the functions I designed if you say something about playing the sound, STT or detecting the number of human beings. 
+AI will operate the functions I designed if you say something about making some noise, STT or detecting the number of human beings. 
