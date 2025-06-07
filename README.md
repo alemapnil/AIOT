@@ -48,7 +48,7 @@ Recording audio and outputing audio file with _pyaudio_.
 
 Converting audio format with _pydub_ from .wav to .mp3 owing to smaller size of .mp3, resulting in faster transmission to AWS.
 
-Creating the folder in AWS storage space and uploading the files to it with _boto3_.
+Creating the folder in AWS storage and uploading the files to it with _boto3_.
 #### openCV-python, cvlib
 Opening the camera embedded in your computers and showing the video of objects in front of screen with _openCV-python_.
 
