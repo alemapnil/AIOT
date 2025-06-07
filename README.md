@@ -4,7 +4,7 @@ Welcome to my project ! This is an AI robot allowing you to realise 3 functions 
 ## Motivation
 I'm curious about the achievement that AI can fulfil, and I'm also eager to apply new technologies to my project to upgrade my capacity of software engineering. 
 ## OpenAI
-#### Audio API in Realtime API
+#### Audio API
 The transcriptions API, belonging to audio API, takes as input the audio file you want to transcribe and the desired output file format for the transcription of the audio. It utilises the LLM model, GPT-4o. 
 ```
 client = OpenAI(api_key = os.getenv("OPENAI_API_KEY"))
