@@ -65,3 +65,7 @@ Please talk to AI your request within a short period of time when you see the be
 AI will operate the functions I designed if you say something about making some noise, STT or detecting the number of human beings. 
 If you'd like to close the camera poping up, just hit its **close button** with mouse.
 If you want to terminate the application, press the key causing the error of **KeyboardInterrupt**.
+
+
+https://github.com/user-attachments/assets/8098d5cf-b611-4d12-8f6b-505268e7a4f3
+
