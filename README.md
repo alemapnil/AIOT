@@ -39,7 +39,7 @@ Installing _FFMPEG_, a multimedia framework, for you to convert a file format of
 The way of its installation based on the type of OS in your computer.
 ### Configuration of Yolov3
 Downloading the file, ***yolov3.cfg***, I attached in this repository, and [***yolov3.weights***](https://data.pjreddie.com/files/yolov3.weights). Put those two files in this directory of relative path, ***./.cvlib/object_detection/yolo/yolov3***.
-_Yolov3_ is the model for detection of objects in camera, so you must set its configuration right with ***yolov3.cfg*** and ***yolov3.weights***  
+_Yolov3_ is the model for detection of objects in camera, so you must set its configuration with ***yolov3.cfg*** and ***yolov3.weights*** in the right place. 
 ## Packages
 #### playsound
 Playing the sound from speakers in your computers.
