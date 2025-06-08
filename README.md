@@ -1,4 +1,4 @@
-# AIOT
+# AIoT
 ## Description
 Welcome to my project ! This is an AI robot allowing you to realise 3 functions such as playing the sound, speech to text, detecting the number of human beings through your command of voice. This application can only be executed in the version of __Python 3.11.0__. I promise you'll find it very interesting and comprehend how formidable AI's power is. 
 ## Motivation
