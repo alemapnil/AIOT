@@ -49,7 +49,7 @@ _Yolov3_ is the model for detection of objects in camera, so you must set its co
 #### playsound
 Playing the sound from speakers in your computers.
 #### pyaudio, pydub, boto3
-Recording audio and outputing audio file with _pyaudio_.
+Recording and producing audio file with _pyaudio_.
 
 Converting audio format with _pydub_ from .wav to .mp3 owing to smaller size of .mp3, resulting in faster transmission to AWS.
 
